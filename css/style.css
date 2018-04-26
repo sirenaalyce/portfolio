@@ -1,0 +1,200 @@
+/*
+
+Color Scheme:
+
+Midnight Blue: #1A072B rgb(26,7,43)
+Medium Violet Red: #C52198 rgb(197,33,152)
+Light Sea Green: #2ABABD rgb(42,186,189)
+Dark Slate Blue: #433996 rgb(67,57,150)
+Slate Blue: #5C51BE rgb(92,81,190)
+Light Steel Blue: #F8F6FA rgb(248,246,250)
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+
+*/
+
+/*Global*/
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Tajawal', sans-serif;*/
+
+h1 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 80px;
+    margin: 0 0 30px 0;
+    }
+h2 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    margin: 0 0 23px 0;
+    }
+
+p {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+a{
+    font-family: 'Tajawal', sans-serif;
+    color: #C52198;
+}
+#about{
+    padding-bottom: 0;
+}
+
+#skills{
+    background: linear-gradient(-90deg,
+        rgba(197,33,152),
+        rgba(42,186,189),
+        rgba(92,81,190)
+      
+      );
+    color:white;
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+#portfolio{
+    padding-top: 60px;
+}
+#process{
+    background: linear-gradient(-90deg,
+        rgb(197,33,152),
+        rgb(42,186,189),
+        rgb(92,81,190)
+      
+      );
+    color:white;
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+
+/*Jumbotron*/
+.jumbotron {
+      background: linear-gradient(-90deg,
+        rgb(197,33,152),
+        rgb(42,186,189),
+        rgb(92,81,190)
+      
+      );
+    top:auto;
+    color: white;
+    padding-bottom: 60px;
+  }
+
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      width: auto;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+
+  
+  .navbar {
+      margin-bottom: 0;
+      background: linear-gradient(-90deg,
+        rgba(197,33,152),
+        rgba(42,186,189),
+        rgba(92,81,190)
+      
+      );
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: 'Tajawal', sans-serif;}
+
+ .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #2ABABD !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  } 
+      
+/*skills section*/
+
+/*portfolio*/
+      
+#portfolio{
+    padding-top: 60px;
+}
+.thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+
+/*Contact*/
+.submit{
+    background: #C52198;
+    color: white;
+}
+/*Footer*/
+ 
+.footer{
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+
+.fa fa-angle-double-up{
+    font-size:48px;
+    color:#C52198;
+}
+
+ 
