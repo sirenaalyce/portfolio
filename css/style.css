@@ -49,6 +49,26 @@ a{
     font-family: 'Tajawal', sans-serif;
     color: #C52198;
 }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: transparent;
+}
 #about{
     padding-bottom: 0;
 }
@@ -102,18 +122,37 @@ a{
       color: #f4511e;
       font-size: 50px;
   }
+
   .logo {
-      width: auto;
+      width: 100px;
+      height: 100px;
   }
+  .logo {vertical-align: middle;}
+
+.thumbnail:hover {
+      box-shadow: 5px 0px 40px rgba(42,186,189, .8);
+  }
+
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
       border-radius: 0;
+      transition: box-shadow 0.5s;
   }
   .thumbnail img {
       width: 100%;
       height: 100%;
       margin-bottom: 10px;
+  }
+ .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #433996;
+  }
+  .carousel-indicators li {
+      border-color: #433996;
+  }
+  .carousel-indicators li.active {
+      background-color: #433996;
   }
 
   
@@ -169,6 +208,15 @@ a{
 #portfolio{
     padding-top: 60px;
 }
+/*Carousel*/
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C52198' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C52198' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 .thumbnail {
       padding: 0 0 15px 0;
       border: none;
@@ -179,7 +227,51 @@ a{
       height: 100%;
       margin-bottom: 10px;
   }
+/*Svcs and Prices Panel*/
 
+.panel {
+      border: 1px solid #C52198; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(42,186,189, .8);
+  }
+/*
+  .panel-footer .btn:hover {
+      border: 1px solid #C52198;
+      background-color: #fff !important;
+      color: #C52198;
+  }
+*/
+  .panel-heading {
+      color: #fff !important;
+      background-color: #C52198 !important;
+      padding-top: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #C52198;
+      color: #fff;
+  }
 /*Contact*/
 .submit{
     background: #C52198;
