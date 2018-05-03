@@ -7,10 +7,10 @@
     
      
     <!--Bootstrap stylesheet and scripts-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
      <!-- JQuery-->
     <script src="script/jquery.easing.1.3.js"></script>
@@ -21,6 +21,8 @@
       
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Oswald|Tajawal" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       
     <!--CSS-->
     
@@ -35,9 +37,13 @@
     
   <body id="myPage">
       
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <i class="fa fa-angle-double-up" style="font-size:48px;color:#2ABABD"></i>
+      </button>
+      
     <!--NavBar-->
       
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
   <a class="navbar-brand" href="http://www.sirenaalyce.com/sirenaalyce-web-design/">Sirena Alyce Web Design</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -57,7 +63,7 @@
         <a class="nav-link" href="#portfolio">Portfolio</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Services & Prices</a>
+        <a class="nav-link" href="#Services">Services & Prices</a>
       </li>
         <li class="nav-item">
         <a class="nav-link" href="#contact">Contact Me!</a>
@@ -85,7 +91,7 @@
       
       <!--About-->
       
-      <!-- Container (About Section) -->
+      
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-6">
@@ -97,8 +103,8 @@
         
      <p>Icing pie oat cake sweet roll bear claw. Biscuit carrot cake macaroon brownie gingerbread gummi bears jujubes. Chupa chups danish cupcake pie sugar plum danish. Gummi bears tootsie roll powder pudding sweet roll liquorice gummi bears sweet roll. Powder jelly-o bear claw tart icing cake caramels brownie jujubes. Jujubes dragée marzipan. Ice cream bonbon soufflé jelly tootsie roll pastry muffin pastry. Lollipop cake dessert fruitcake marshmallow tiramisu. Cake pie lollipop topping. Gummies chocolate cake wafer. Cheesecake gingerbread tootsie roll bonbon bear claw tiramisu. Tootsie roll sugar plum candy canes.</p>          
     </div>
-    <div class="col-sm-6">
-      <span class="logo"><img class="img-fluid" src="images/Sirena%20Alyce%20(2).png" alt="Sirena Alyce Web Design Logo"></span>
+    <div class="zoom align-middle col-sm-6">
+      <span class="logo"><img class="img-fluid" src="images/SirenaAlyce.png" alt="Sirena Alyce Web Design Logo"></span>
     </div>
   </div>
 </div>
@@ -116,32 +122,40 @@
       <!--Skills-->
 <div id="skills" class="container-fluid">
   <h2>Expertise</h2>
-    <div class="row">
+    <div class="row text-center">
+
         <div class="col-sm-4 skillone">
-          <p>skill 1</p>
+            <i class="fab fa-html5" style="font-size:48px;color:#F8F6FA"></i>
+          <p>HTML</p>
         </div>
 
         <div class="col-sm-4 skilltwo">
-          <p>skill 2</p>
+            <i class="fab fa-css3" style="font-size:48px;color:#F8F6FA"></i>
+          <p>CSS</p>
         </div>
-
+        
         <div class="col-sm-4 skillthree">
-          <p>skill 3</p>
+            <i class="fab fa-js" style="font-size:48px;color:#F8F6FA"></i>
+          <p>JavaScript</p>
         </div>
     
   </div>
     
-  <div class="row">
+  <div class="row text-center">
+    
         <div class="col-sm-4 skillfour">
-          <p>skill 4</p>
+            <i class="fab fa-wordpress-simple" style="font-size:48px;color:#F8F6FA"></i>
+          <p>Wordpress</p>
         </div>
-
-        <div class="col-sm-4 skillfive">
-          <p>skill 5</p>
+      
+      <div class="col-sm-4 skillfive">
+            <i class="fas fa-pencil-alt"style="font-size:48px;color:#F8F6FA"></i>
+          <p>Content Creation</p>
         </div>
-
+      
         <div class="col-sm-4 skillsix">
-          <p>skill 6</p>
+        <i class="fa fa-line-chart" style="font-size:48px;color:#F8F6FA"></i>
+          <p>Data Analysis</p>
         </div>
     
   </div>
@@ -153,82 +167,216 @@
   <div class="row slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/jelly%20fish.png" alt="Paris" width="400" height="400">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+        <img src="images/SirenaAlyce%20Blog.png" alt="Paris" width="400" height="400">
+          <p><a href="sirenaalyce.com"><strong>SirenaAlyce.com</strong></a></p>
+        <p>Lifestyle Blog</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/Sirena%20Alyce%20(2).png" alt="New York" width="400" height="400">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+        <img src="images/Copy%20of%20Pup%20Appeal.png" alt="New York" width="400" height="400">
+          <p><a href="#"><strong>Pup Appeal</strong></a></p>
+        <p>Dog Apparel and Accessories</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="images/neon%20lights.jpg" alt="San Francisco" width="350" height="400">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+        <img src="images/SirenaAlyce.png" alt="San Francisco" width="400" height="300">
+          <p><a href="#"><strong>...Creative</strong></a></p>
+        <p>Someone's Portfolio</p>
       </div>
     </div>
   </div><br>
-</div>
+      
 
+
+      <!--Testimonial (grey background)-->
+    <h2 class="animated-div-blue">Say What?</h2>
+      <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p>"Sirena Alyce Web Design is AMAZING!"<BR>
+              <SPAN>Amazing Woman, CEO, Amazing Woman Enterpises</SPAN></BR></p>
+        </div>
+        <div class="carousel-item">
+          <p>"Sirena Alyce Web Design is AMAZING!"<BR>
+              <SPAN>Amazing Woman, CEO, Amazing Woman Inc</SPAN></BR></p>
+        </div>
+        <div class="carousel-item">
+          <p>"Sirena Alyce Web Design is AMAZING!"<BR>
+              <SPAN>Amazing Woman, CEO, Amazing Woman LLC</SPAN></BR></p>
+        </div>
+      </div>
+          
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+      <!--The Process-->
 <div id="process" class="container-fluid">
   <h2>The Process</h2>
-    <div class="row">
-        <div class="col-sm-4 skillone">
-          <p>skill 1</p>
+    <div class="row text-center">
+        <div class="col-sm-4">
+            <i class="far fa-handshake" style="font-size:48px;color:#F8F6FA"></i>
+          <p>The Collaboration</p>
         </div>
 
-        <div class="col-sm-4 skilltwo">
-          <p>skill 2</p>
+        <div class="col-sm-4">
+            <i class="fas fa-search" style="font-size:48px;color:#F8F6FA"></i>
+          <p>Research, Inspiration, & Planning</p>
         </div>
 
-        <div class="col-sm-4 skillthree">
-          <p>skill 3</p>
+        <div class="col-sm-4">
+            <i class="fab fa-firstdraft" style="font-size:48px;color:#F8F6FA"></i>
+          <p>Design</p>
         </div>
-    
+    </div>
+        
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <i class="fas fa-code" style="font-size:48px;color:#F8F6FA"></i>
+              <p>Development</p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fas fa-cogs" style="font-size:48px;color:#F8F6FA"></i>
+              <p>Testing</p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fas fa-rocket" style="font-size:48px;color:#F8F6FA"></i>
+              <p>Launch</p>
+            </div>
+    </div>
+  </div>
+<br>
+
+      <!--Services and Prices (gradient background)-->
+<div id="Services" class="container-fluid">
+
+    <h2 class="animated-div-blue">Pricing</h2>
+    <h4>Choose the service that works for you!</h4>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+<!--          <button class="send-color btn btn-lg">Sign Up</button>-->
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+<!--          <button class="send-color btn btn-lg">Sign Up</button>-->
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1 style="font-size:62px">Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+<!--            <button class="send-color btn btn-lg">Sign Up</button>-->
+        </div>
+      </div>      
+    </div>    
   </div>
 </div>
-      <!--Testimonial (grey background)-->
-      <!--Services and Prices (gradient background)-->
       
       <!--Contact (grey background)-->
-      <div id="contact" class="container-fluid bg-grey">
-  <h2 class="animated-div-blue">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact me and I'll get back to you within 48 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Atlanta, GA US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> 770-820-4194</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> hello@sirenaalyce.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="animated-div-blue">CONTACT</h2>
       <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <div class="col-sm-5">
+          <p>Contact me and I'll get back to you within <strong>48</strong> hours.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> Atlanta, GA US</p>
+          <p><span class="glyphicon glyphicon-phone"></span> 770-820-4194</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> hello@sirenaalyce.com</p>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right submit send-color" type="submit">Send</button>
+            </div>
+          </div>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right submit send-color" type="submit">Send</button>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 
       <!--Footer(gradient background)-->
       
     <footer class="text-center footer">
         <p>Created by <a href="sirenaalyce.com">Sirena Alyce Web Design</a></p> 
-        <i class="fa fa-angle-double-up" style="font-size:48px;color:#D8113D"></i>
+<!--        <i class="fa fa-angle-double-up" style="font-size:48px;color:#D8113D"></i>-->
     </footer>
+      
+      <!--Scroll to Top-->
+      <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
   </body>
 </html>
