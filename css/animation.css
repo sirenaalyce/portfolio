@@ -1231,7 +1231,7 @@ stretchRight
 .send-color:hover{
     background-color: #C52198;
     -webkit-animation-name: send; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: send;
     animation-duration: 4s;
     
@@ -1240,4 +1240,15 @@ stretchRight
     from {background-color:#C52198 ;}
     to {background-color: rgb(42,186,189);}
         to{background-color:#5C51BE; }
+}
+
+/*logo animation*/
+.zoom{
+    transition: transform 1s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
