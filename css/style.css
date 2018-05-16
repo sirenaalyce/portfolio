@@ -1,5 +1,13 @@
-/*
 
+/*
+Theme Name: Chakra
+Theme URI: sirenaalyce.com/chakra
+Description: Rich jewel-tone colored theme perfect for highlighting a creative's work.
+Version: 1.0
+Author: Sirena Gandy
+Author URI: sirenaalyce.com
+*/
+/*
 Color Scheme:
 
 Midnight Blue: #1A072B rgb(26,7,43)
@@ -22,6 +30,7 @@ padding-left
 font-family: 'Dancing Script', cursive;
 font-family: 'Tajawal', sans-serif;*/
 
+
 h1 {
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
@@ -29,6 +38,7 @@ h1 {
     font-size: 80px;
     margin: 0 0 30px 0;
     }
+
 h2 {
     font-family: 'Tajawal', sans-serif;
     font-weight: 100;
@@ -183,12 +193,19 @@ a{
       border-color: transparent;
       color: #fff !important;
   }
-  
-  
-  @media screen and (max-width: 768px) {
+/*
+@media screen and (max-width: 480px) {
+    
+      h1{
+          font-size:62px;
+      }
+*/
+    
+ @media screen and (max-width: 768px) {
     .col-sm-4 {
       text-align: center;
-      margin: 25px 0;
+        margin: 25px 0;}
+       
     }
     .btn-lg {
         width: 100%;
@@ -197,10 +214,14 @@ a{
   }
   @media screen and (max-width: 480px) {
     .logo {
-        font-size: 150px;
+        font-size: 30px;
     }
-  } 
       
+  } 
+ 
+
+
+
 /*skills section*/
 
 /*portfolio*/
@@ -208,6 +229,8 @@ a{
 #portfolio{
     padding-top: 60px;
 }
+
+
 /*Carousel*/
 
 .carousel-control-prev-icon {
@@ -227,11 +250,15 @@ a{
       height: 100%;
       margin-bottom: 10px;
   }
+
+/*The process*/
+
+
 /*Svcs and Prices Panel*/
 
 .panel {
       border: 1px solid #C52198; 
-      border-radius:0 !important;
+      border-radius:10px !important;
       transition: box-shadow 0.5s;
   }
   .panel:hover {
@@ -244,6 +271,7 @@ a{
       color: #C52198;
   }
 */
+
   .panel-heading {
       color: #fff !important;
       background-color: #C52198 !important;
@@ -252,8 +280,8 @@ a{
       padding-right: 30px;
       padding-bottom: 15px;
       border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
   }
@@ -272,6 +300,24 @@ a{
       background-color: #C52198;
       color: #fff;
   }
+@media screen and (min-width: 1025px) {
+     .level, .extras{
+          font-size:62px;
+      }
+       
+    }
+@media screen and (max-width: 768px) {
+    
+    .level{
+          font-size:40px;
+      }
+}
+@media screen and (max-width: 1024px) {
+    
+   .level, .extras{
+          font-size:30px;
+      }
+}
 /*Contact*/
 .submit{
     background: #C52198;
