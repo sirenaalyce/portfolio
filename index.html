@@ -508,33 +508,57 @@
           <p><span class="glyphicon glyphicon-envelope"></span> hello@sirenaalyce.com</p>
         </div>
 
-    <form id="contact-form" method="post" action="contact.php" role="form">
-        <div class="messages"></div>
+   <form id="contact-form" method="post" action="contact.php" role="form">
 
-        <div class="col-sm-7 slideanim">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required data-error="Name is required.">
-              <div class="help-block with-errors"></div>
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">First Name<sup>*</sup></label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
             </div>
-
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required data-error="Email is required.">
-              <div class="help-block with-errors"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Last Name<sup>*</sup></label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
             </div>
-          </div>
-
-          <textarea class="form-control" id="message" name="message" placeholder="Give a Brief Description of Your Project and What Service You're Interested In." rows="5" required data-error="Email is required."></textarea><br>
-          <div class="help-block with-errors"></div>
-
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right submit send-color" type="submit" name"send">Submit</button>
-
-            </div>
-          </div>
         </div>
-        </form>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_email">Email<sup>*</sup></label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message<sup>*</sup></label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send submit" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
+    </div>
+
+</form>
       </div>
     </div>
 
