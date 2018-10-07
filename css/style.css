@@ -335,8 +335,14 @@ a{
 }
 /*Contact*/
 .submit{
+    background: none;
+    color: gray;
+    border:none;
+}
+.submit:hover{
     background: #C52198;
     color: white;
+    border:none;
 }
 /*Footer*/
 
